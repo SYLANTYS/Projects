@@ -1,6 +1,8 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+    background-color: rgb(10, 5, 84);
+    color: #fff;
   }
   
   ol, ul {
@@ -49,9 +51,6 @@ body {
     margin-left: 20px;
   }
 
-  .bold {
-    font-weight: bold;
-  }
   .bold button {
     font-weight: bold;
   }
