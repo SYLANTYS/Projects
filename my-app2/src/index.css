@@ -10,6 +10,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   max-width: 500px;
   margin: 30px auto;
@@ -31,7 +35,7 @@ body {
   display: inline-block;
   background: #000;
   color: #fff;
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
@@ -39,6 +43,7 @@ body {
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+  box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .btn:focus {
@@ -47,6 +52,8 @@ body {
 
 .btn:active {
   transform: scale(0.98);
+  box-shadow: 0px 0px;
+  transform: translate(4px,2px);
 }
 
 .btn-block {
@@ -54,11 +61,18 @@ body {
   width: 100%;
 }
 
+.btn-block:hover{
+  border: 1px solid #000;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
 .task {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.25);
 }
 
 .task.reminder {
