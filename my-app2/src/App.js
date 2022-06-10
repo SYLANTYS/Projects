@@ -5,6 +5,7 @@ import Tasks from "./components/Tasks";
 import AddTask from './components/AddTask';
 import Footer from './components/Footer';
 import About from './components/About';
+import Alarm from './components/Alarm';
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState (false)
@@ -93,6 +94,9 @@ const App = () => {
         <Header 
           onAdd={() => setShowAddTask(!showAddTask)} 
           showAdd={showAddTask} 
+        />
+        <Alarm 
+          onChange={"something"}
         />
         <Routes>
           <Route
