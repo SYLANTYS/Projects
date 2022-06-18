@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: #23252C;
+  color: white;
+}
+
+.main_content {
+  margin: 44px 116px;
+  background-color: #1A1B21;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 21px;
+}
+
+.info--name {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.info--title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  color: #F3BF99;
+}
+
+.info--website {
+  margin: 7px;
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+.info--buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 21px;
+}
+
+.info--email_button {
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 9px 13px 9px 11px;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 34px;
+}
+
+.info--linkedin_button {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  background: #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 9px 13px 9px 11px;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 34px;
+}
+
+.about {
+  padding: 18px 21px 12px 21px;
+}
+
+.about--title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #F5F5F5;
+}
+.about--para {
+  margin: 0;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #DCDCDC;
+}
+
+.interests {
+  padding: 0px 21px 28px 21px;
+}
+
+.interests--title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #F5F5F5;
+}
+.interests--para {
+  margin: 0;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #DCDCDC;
+}
+
+footer {
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+  padding: 15px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
