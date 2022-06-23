@@ -1,8 +1,11 @@
+import React from 'react'
+import { FaGlobeAmericas } from 'react-icons/fa'
 
 export default function Navbar() {
   return (
     <nav>
-      <img src="../images/airbnb-logo.png" className="nav--logo" />
+      <FaGlobeAmericas color='white'size={24}/>
+      <h3 className='nav--title'>my travel journal.</h3>
     </nav>
   )
 }
