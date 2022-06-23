@@ -1,15 +1,26 @@
-import Info from "./components/Info"
-import About from "./components/About"
-import Interests from "./components/Interests"
-import Footer from "./components/Footer"
+import React from "react"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import Card from "./components/Card"
+import data from "./data"
 
 export default function App() {
+  const cards = data.map(item => {
+    return (
+      <Card 
+        key={item.id}
+        {...item}
+      />
+    )
+  })
+
   return (
-    <div className="main_content">
-      <Info />
-      <About />
-      <Interests />
-      <Footer />
-    </div>
+      <div>
+        <Navbar />
+        <Hero />
+        <section className="cards-list">
+          {cards}
+        </section>
+      </div>
   )
 }
