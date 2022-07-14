@@ -10,7 +10,7 @@ export default function Info() {
       <h1 className='info--name'>Patrick Sylantys</h1>
       <h3 className='info--title'>Web3 Developer</h3>
       <a 
-        href='https://typedream.site/patricksylantys'
+        href='javascript:https://typedream.site/patricksylantys'
         target="_blank"
         rel="noreferrer"
         className='info--website'>
