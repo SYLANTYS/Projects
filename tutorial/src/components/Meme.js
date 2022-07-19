@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 
-export default function Meme() {
+export default function Meme(props) {
     
     const [meme, setMeme] = React.useState({
         topText: "",
@@ -33,7 +33,7 @@ export default function Meme() {
     }
 
     return (
-        <main>
+        <main className= {props.darkMode ? "dark" : ""}>
             <div className="form">
                 <input 
                     type="text"
@@ -60,9 +60,12 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-                <img src={meme.randomImage} alt="memeimg" className="meme--image" />
-                <h2 className="meme--text top">{meme.topText}</h2>
-                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+                <div className="meme-inside">
+                    <img src={meme.randomImage} alt="memeimg" className="meme--image"
+                    onClick={getMemeImage} />
+                    <h2 className="meme--text top">{meme.topText}</h2>
+                    <h2 className="meme--text bottom">{meme.bottomText}</h2>
+                </div>
             </div>
         </main>
     )

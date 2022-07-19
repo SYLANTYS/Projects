@@ -11,7 +11,12 @@ main {
   padding: 36px;
 }
 
-.header {
+main.dark {
+  background-color: #2B283A;
+  height: 90.7%;
+}
+
+header {
   display: flex;
   align-items: center;
   height: 65px;
@@ -35,6 +40,44 @@ main {
   font-weight: 500;
 }
 
+.switch {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.switch--outside {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+header.dark .switch--outside {
+  border-color: white;
+  background-color: white;
+  justify-content: flex-end;
+}
+
+.switch--circle {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header.dark .switch--circle {
+  background-color: #2B283A;
+}
+
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
@@ -49,7 +92,24 @@ main {
   text-indent: 5px;
 }
 
+main.dark .form--input {
+  color: white;
+  background-color: #4B485A;
+}
+
 .form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form--button:hover {
+  filter: brightness(97%);
+  transform: scale(101%);
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
@@ -61,10 +121,22 @@ main {
 
 .meme {
   position: relative;
+  cursor: pointer;
+}
+
+.meme:hover {
+  filter: brightness(97%);
+  transform: scale(101%);
+  position: relative;
+}
+
+.meme-inside {
+  position: absolute;
 }
 
 .meme--image {
   max-width: 100%;
+  height: 460px;
   border-radius: 3px;
 }
 
