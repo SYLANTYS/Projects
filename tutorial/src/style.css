@@ -5,170 +5,121 @@
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
+  background: #F5F7FB;
 }
 
-main {
-  padding: 36px;
-}
-
-main.dark {
-  background-color: #2B283A;
-  height: 90.7%;
-}
-
-header {
+.startPage {
+  margin-top: 200px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-  color: white;
-  padding: 20px;
 }
 
-.header--image {
-  height: 100%;
-  margin-right: 6px;
-}
-
-.header--title {
-  font-size: 1.25rem;
-  margin-right: auto;
-}
-
-.header--project {
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-.switch {
-  display: flex;
-  align-items: center;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-.switch--outside {
-  width: 25px;
-  height: 13px;
-  background-color: #2B283A;
-  border-radius: 2rem;
-  margin-inline: 7px;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border: 1px solid black;
-  box-sizing: content-box;
-}
-
-header.dark .switch--outside {
-  border-color: white;
-  background-color: white;
-  justify-content: flex-end;
-}
-
-.switch--circle {
-  width: 13px;
-  height: 13px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-header.dark .switch--circle {
-  background-color: #2B283A;
-}
-
-.form {
-  display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
-  gap: 17px;
-  margin-bottom: 17px;
-}
-
-.form--input {
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  border: 1px solid #D5D4D8;
-  text-indent: 5px;
-}
-
-main.dark .form--input {
-  color: white;
-  background-color: #4B485A;
-}
-
-.form--button {
-  grid-column: 1 / -1;
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.form--button:hover {
-  filter: brightness(97%);
-  transform: scale(101%);
-  grid-column: 1 / -1;
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.meme {
-  position: relative;
-  cursor: pointer;
-}
-
-.meme:hover {
-  filter: brightness(97%);
-  transform: scale(101%);
-  position: relative;
-}
-
-.meme-inside {
-  position: absolute;
-}
-
-.meme--image {
-  max-width: 100%;
-  height: 460px;
-  border-radius: 3px;
-}
-
-.meme--text {
-  position: absolute;
-  width: 80%;
+.start--title {
+  margin: 0;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 37px;
   text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
+  
+  color: #293264;
+  
+}
+
+.start--description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #293264;
+
+}
+
+.start--button {
+  margin: 10px;
+  width: 193px;
+  height: 52px;
+  background: #4D5B9E;
+  border-radius: 15px;  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  color: #F5F7FB;
+  cursor: pointer;
+}
+
+.quizPage {
+  margin: 45px 75px;
+}
+
+.quiz--content {
   margin: 15px 0;
-  padding: 0 5px;
-  font-family: impact, sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
 }
 
-.bottom {
-  bottom: 0;
+.quiz--check {
+  margin: 10px;
+  background: #4D5B9E;
+  border-radius: 10px;
+  width: 120px;
+  height: 35px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  border: none;
+
+  color: #F5F7FB;
+  cursor: pointer;
+  }
+
+.quiz--question {
+  margin: 0;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #293264;
 }
 
-.top {
-  top: 0;
+.quiz--buttonFlex {
+  display: flex;
+  gap: 13px;
+}
+
+.quiz--button {
+  padding: 3px 10px;
+  margin: 12px 0;
+  min-width: 66px;
+
+  border: 0.794239px solid #4D5B9E;
+  border-radius: 7.94239px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 12px;
+
+  text-align: center;
+
+  color: #293264;
+  cursor: pointer;
+}
+
+hr {
+  margin: 0;
+  border: 0.794239px solid #DBDEF0;
 }
