@@ -18,7 +18,7 @@ export default function Quiz(props) {
       <button 
         className='quiz--check'
         onClick={props.counter}
-        >Check answers
+        >New Questions
       </button>
     </div>
   )

@@ -1,5 +1,4 @@
 import React from 'react'
-import Buttons from './Buttons'
 import { nanoid } from 'nanoid'
 
 export default function Questions(props) {
@@ -27,30 +26,26 @@ export default function Questions(props) {
   }
 
   const correctID = 1
-  console.log(correctID)
 
   function selectButton(id) {
-    console.log(id)
     setAnswersArray(oldSelect => 
       oldSelect.map(answer => {
         return (
-          {...answer, isCorrect: answer.isCorrect=false},
           {...answer, isFalse: answer.isFalse=false},
+          
+          answer.id === correctID ? 
+          {...answer, isCorrect: answer.isCorrect=true}
+          :
+          answer,
+          
           id === correctID && answer.id === id ?
           {...answer, isCorrect: answer.isCorrect=true} :
           answer.id === id ? 
-          {...answer, isFalse: answer.isFalse=true} :
+          {...answer, isFalse: answer.isFalse=true} 
+          :
           answer
         )
       }
-
-
-        // return (
-        //   {...answer, isSelected: answer.isSelected=false},
-        //   answer.id === id ? 
-        //   {...answer, isSelected: !answer.isSelected} :
-        //   answer
-        //   )
     ))
   }
 
@@ -74,4 +69,20 @@ export default function Questions(props) {
       <hr></hr>
     </div>
   )
+}
+
+class Buttons extends React.Component {
+  render() {
+    return (
+      <button 
+        className='quiz--button' 
+        style={ 
+          {backgroundColor: this.props.isCorrect? "#94D7A2" : this.props.isFalse? "#F8BCBC" : "",
+          border: this.props.isCorrect || this.props.isFalse? "none" : ""} 
+        }
+        onClick={this.props.selectButton}
+        >{this.props.ans}
+      </button>
+    )
+  }
 }
